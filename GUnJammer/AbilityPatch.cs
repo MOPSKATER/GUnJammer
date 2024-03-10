@@ -1,6 +1,5 @@
 ﻿using HarmonyLib;
 using System.Reflection;
-using UnityEngine;
 
 namespace GUnJammer
 {
@@ -16,10 +15,7 @@ namespace GUnJammer
         {
             GameInput controller = Singleton<GameInput>.Instance;
             if (controller.GetButtonDown(GameInput.GameActions.FireCard, GameInput.InputType.Game) && ____isWeaponReloading && RM.GetAcceptInput())
-            {
                 buffered = true;
-                Debug.Log("Buffer Loaded");
-            }
         }
 
         [HarmonyPostfix]
@@ -39,7 +35,6 @@ namespace GUnJammer
                 fireCard.Invoke(__instance, [0]);
                 ____waitToStopFiring = false;
                 ____shotOnDown = true;
-                Debug.Log("Buffer Shot");
             }
         }
     }
