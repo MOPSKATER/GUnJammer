@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AbilityPatch.cs~RF11fb8.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>G:\Spiele\steamapps\common\Neon White\MelonLoader\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>G:\Spiele\steamapps\common\Neon White\Neon White_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>G:\Spiele\steamapps\common\Neon White\MelonLoader\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>G:\Spiele\steamapps\common\Neon White\Neon White_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>G:\Spiele\steamapps\common\Neon White\Neon White_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
