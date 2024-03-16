@@ -1,10 +1,11 @@
 ﻿using HarmonyLib;
+using MelonLoader;
 using System.Reflection;
 
 namespace GUnJammer
 {
     [HarmonyPatch]
-    internal class AbilityPatch
+    internal class AbilityPatch : MelonMod
     {
         private static bool buffered = false;
         private static readonly MethodInfo fireCard = typeof(MechController).GetMethod("FireCard", BindingFlags.NonPublic | BindingFlags.Instance, null, [typeof(int)], null);

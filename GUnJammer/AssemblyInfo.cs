@@ -19,5 +19,5 @@ using System.Runtime.InteropServices;
 // bereitgestellt wird.
 
 [assembly: Guid("27d7d985-5c2c-4843-a1fa-fb7012e66187")]
-[assembly: MelonInfo(typeof(GUnjammer.Main), "GUnjammer", "0.1.0", "MOPSKATER")]
+[assembly: MelonInfo(typeof(GUnJammer.AbilityPatch), "GUnJammer", "0.1.0", "MOPSKATER")]
 
